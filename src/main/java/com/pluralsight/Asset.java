@@ -50,9 +50,7 @@ public class Asset {
                 ", dateAcquired='" + dateAcquired + '\'' +
                 ", originalCost=" + originalCost +
                 '}';
-    }
-
-
+        }
     }
 
 

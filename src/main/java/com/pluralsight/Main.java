@@ -18,6 +18,7 @@ public class Main {
         assets.add(house);
         assets.add(car);
         assets.add(car);
+        Asset a = new Asset("test", "2025-01-01",100);
 
         for (Asset asset : assets) {
             System.out.println("Description: " + asset.getDescription());
