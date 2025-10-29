@@ -11,14 +11,14 @@ public class Main {
                 "123 Main Street", 1, 14000, 6000);
 
         System.out.println("========================================================");
-
         Vehicle car = new Vehicle("Sabrina Car", "2020-06-10", 15000,
                 "Ford Fusion", 2023, 200000);
+         Cash cash= new Cash("MoneyGram", "2025-10-01",100);
 
         assets.add(house);
         assets.add(car);
-        assets.add(car);
-        Asset a = new Asset("test", "2025-01-01",100);
+        assets.add(cash);
+
 
         for (Asset asset : assets) {
             System.out.println("Description: " + asset.getDescription());
@@ -33,6 +33,8 @@ public class Main {
                 System.out.println("Make & Model: " + car.getMakeModel());
                 System.out.println("Year: " + car.getYear());
                 System.out.println("Odometer:" + car.getOdometer());
+            } else if(asset instanceof Cash){
+                System.out.println("Type: Cash");
             }
 
             System.out.println("===========================================");
